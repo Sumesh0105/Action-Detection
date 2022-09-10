@@ -1,4 +1,4 @@
-opencv2-python
+opencv-python
 streamlit
 tensorflow-cpu
 numpy
