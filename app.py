@@ -29,13 +29,13 @@ while run:
 
     #image1 = cv2.cvtColor(frame1, cv2.IMREAD_COLOR)
     #image1 = cv2.imdecode(frame1, cv2.IMREAD_COLOR)
-    image1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
-    image1 = cv2.resize(image1,(256,256))
+    image1 = cv2.resize(frame1,(256,256))
+    image1 = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
     image1 = np.dstack([image1]*3)
     #image2 = cv2.cvtColor(frame2, cv2.IMREAD_COLOR)
     #image2 = cv2.imdecode(frame2, cv2.IMREAD_COLOR)
-    image2 = cv2.cvtColor(frame2, cv2.COLOR_BGR2GRAY)
-    image2 = cv2.resize(image2,(256,256))
+    image2 = cv2.resize(frame2,(256,256))
+    image2 = cv2.cvtColor(image2, cv2.COLOR_BGR2GRAY)
     image2 = np.dstack([image2]*3)
 
 
