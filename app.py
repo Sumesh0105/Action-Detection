@@ -12,7 +12,6 @@ FRAME_WINDOW = st.image([])
 camera = cv2.VideoCapture(0)
 model2 = tf.keras.models.load_model('DeepVisionModel.h5')
 font = cv2.FONT_HERSHEY_SIMPLEX
-# org
 org = (80, 224)
 fontScale = 1
 color = (255, 0, 0)
