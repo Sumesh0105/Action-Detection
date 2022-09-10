@@ -10,7 +10,7 @@ st.title("SIGNED OR UNSIGNED")
 run = st.checkbox('Run')
 FRAME_WINDOW = st.image([])
 camera = cv2.VideoCapture(0)
-model2 = tf.keras.models.load_model('/Users/sumeshvaradharajan/Desktop/DeepVisionModel.h5')
+model2 = tf.keras.models.load_model('DeepVisionModel.h5')
 font = cv2.FONT_HERSHEY_SIMPLEX
 # org
 org = (0, 30)
