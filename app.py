@@ -3,18 +3,21 @@ import streamlit as st
 import time
 import tensorflow as tf
 import numpy as np
-from tensorflow.keras. preprocessing import image
-
 
 st.title("SIGNED OR UNSIGNED")
-run = st.checkbox('Run')
+st.markdown("<h6 style='text-align: right; color: gray;'>~sumesh varadharajan</h6>", unsafe_allow_html=True)
+run = st.checkbox('Click to Run')
 FRAME_WINDOW = st.image([])
 camera = cv2.VideoCapture(0)
-model2 = tf.keras.models.load_model('DeepVisionModel.h5')
+model2 = tf.keras.models.load_model('/Users/sumeshvaradharajan/Desktop/model/DeepVisionModel.h5')
 font = cv2.FONT_HERSHEY_SIMPLEX
+# org
 org = (80, 224)
+
 fontScale = 1
+
 color = (255, 0, 0)
+
 thickness = 3
 while run:
     _, frame1 = camera.read()
@@ -52,12 +55,9 @@ while run:
          FRAME_WINDOW.image(absdiff)
 
     
-    
-    
-
-
 else:
-    st.write('Stopped')
+    st.markdown("<h4 style='text-align: center; color: gray;'>Bye..</h4>", unsafe_allow_html=True)
+
 
 
 
