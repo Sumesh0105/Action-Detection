@@ -1,4 +1,4 @@
-opencv-contrib-python
+pencv-contrib-python-headless
 streamlit
 tensorflow-cpu
 numpy
