@@ -13,12 +13,9 @@ camera = cv2.VideoCapture(0)
 model2 = tf.keras.models.load_model('DeepVisionModel.h5')
 font = cv2.FONT_HERSHEY_SIMPLEX
 # org
-org = (0, 30)
-
-fontScale = 0.5
-
+org = (80, 224)
+fontScale = 1
 color = (255, 0, 0)
-
 thickness = 3
 while run:
     _, frame1 = camera.read()
