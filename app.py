@@ -10,7 +10,7 @@ st.markdown("<h6 style='text-align: right; color: gray;'>~sumesh varadharajan</h
 run = st.checkbox('Click to Run')
 FRAME_WINDOW = st.image([])
 camera = cv2.VideoCapture(0)
-model2 = tf.keras.models.load_model('/Users/sumeshvaradharajan/Desktop/model/DeepVisionModel.h5')
+model2 = tf.keras.models.load_model('DeepVisionModel.h5')
 font = cv2.FONT_HERSHEY_SIMPLEX
 # org
 org = (80, 224)
