@@ -8,7 +8,7 @@ import numpy as np
 st.title("SIGNED OR UNSIGNED")
 st.markdown("<h6 style='text-align: right; color: gray;'>~sumesh varadharajan</h6>", unsafe_allow_html=True)
 FRAME_WINDOW = st.image([])
-camera = cv2.VideoCapture(1)
+camera = cv2.VideoCapture(0)
 model2 = tf.keras.models.load_model('DeepVisionModel.h5')
 font = cv2.FONT_HERSHEY_SIMPLEX
 
