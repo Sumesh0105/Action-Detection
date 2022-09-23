@@ -9,7 +9,7 @@ st.markdown("<h1 style='text-align: center; color: Aqua;'>$IGN LANGUAGE DETECTIO
 st.markdown("<h6 style='text-align: right; color: yellow;'>~sumesh varadharajan</h6>", unsafe_allow_html=True)
 FRAME_WINDOW = st.image([])
 camera = cv2.VideoCapture(0)
-model2 = tf.keras.models.load_model('/Users/sumeshvaradharajan/Desktop/model/DeepVisionModel.h5')
+model2 = tf.keras.models.load_model('DeepVisionModel.h5')
 font = cv2.FONT_HERSHEY_SIMPLEX
 col1, col2, col3 = st.columns([0.2, 5, 0.2])
 
