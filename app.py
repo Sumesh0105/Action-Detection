@@ -70,7 +70,7 @@ if camera.isOpened():
 
 else:
     
-    st.write("Cannot open camera")
+    st.markdown("<h3 style='text-align: center; color: red;'>Sorry for the trouble we couldn't open the camera</h3>", unsafe_allow_html=True)
     
 
     
